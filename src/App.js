@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Bio from "./components/bios";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-container">
+        <h1>Biographies</h1>
+        <Bio
+          name="Luis Fernando Vargas Pena"
+          country="Colombia"
+          image="fernando"
+          profession="Web Developer"
+          bioStory="Motivated and detail-oriented Web Developer with a Diploma in Web Development and Internet Applications from Algonquin College graduated with Honours. Proficient in HTML5, CSS3, JavaScript, with knowledge of REST APIs, PHP, React.js, and Node.js, Git and GitHub. Experienced in personal and group projects, including the development of a restaurant web page. Committed to continuous learning and passionate about developing innovative web solutions."
+        />
+
+        <Bio
+          name="Jenny Marcela Moncada Snachez"
+          country="Colombia"
+          image="marcela"
+          profession="Dental assistant"
+          bioStory="Highly motivated and detail-oriented Dental Assistant with a proven track record of implementing patient education programs, streamlining inventory management systems, and developing patient recall systems resulting in increased patient compliance, reduced supply waste, and improved patient retention. Skilled in infection control protocols, treatment planning, and team training, with a strong commitment to delivering exceptional patient care. Seeking to leverage my skills and experience to contribute to a dynamic dental practice."
+        />
+      </div>
     </div>
   );
 }
